@@ -1,0 +1,44 @@
+
+1. install java 
+   a.first check if java is present or not by :
+       java -version 
+
+   b.if not :
+      sudo apt-get update
+      sudo apt-get install defualt-jdk
+
+
+2.install scala 
+      
+       sudo apt-get install scala
+       scala --version 
+
+
+
+      to check scala is insall or not :
+      scala
+      println("Hello world")
+
+3.CREATE text file : name as file1
+
+      write any code ex-
+
+      object Hello {
+           def main (args :Array[String]){
+
+
+          println("Hello world")
+
+  }
+}
+
+4.compile file : scalac Helloworld.scala
+
+5.Run file : scala Helloworld
+ if you get hello world as output congratulation you done the work!
+
+
+
+
+
+ 
