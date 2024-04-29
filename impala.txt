@@ -1,0 +1,25 @@
+
+1.install docker if not present 
+
+2.Pull impala docker image  & run impala container :
+ pulling the impala image ,you can run it as a docker container  ,use the following command :
+
+docker run -d --name kudu-impala -p 21000:21000 -p 21050:21050 -p 25000:25000 -p 25010:25010 -p 25020:25020 apache/kudu:impala-latest impala
+
+3.Access impala shell :
+ If you want to interact with impala using impala shell ,you can do so by accessing the docker container shell .use following command :
+
+ docker exec -d kudu-impala impala-shell
+
+4.perform database operation :
+  a.create database
+  b.create table
+  c.insert data
+  d.retrieve data
+
+5. quit
+
+6.Stop and remove the container 
+
+ docker stop kudu-impala
+ docker rm kudu-impala
